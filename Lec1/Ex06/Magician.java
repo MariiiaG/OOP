@@ -1,13 +1,13 @@
 package OOP.Lec1.Ex06;
 
-public class Magician extends BaseHero {
+public class Magician extends BaseHero { // Magician является наследником / производным от BaseHero
     private int mana;
     private int maxMana;
 
     public Magician() {
-        super(String.format("Hero_Magician #%d", ++Magician.number),
+        super(String.format("Hero_Magician #%d", ++Magician.number), // use super when address items from the superclass
                 Magician.r.nextInt(100, 200));
-        this.maxMana = Magician.r.nextInt(50, 150);
+        this.maxMana = Magician.r.nextInt(50, 150); // this when we work within current class
         this.mana = maxMana;
     }
 

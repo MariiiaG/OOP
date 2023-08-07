@@ -12,7 +12,7 @@ public class Program {
         System.out.println(hero3.getInfo());
 
         hero3.GetDamage(hero2.Attack());
-        hero3.GetDamage(hero3.Attack());
+        hero3.GetDamage(hero3.Attack()); // a hero here can attack itself >,<  Not great
         System.out.println(hero3.getInfo());
         System.out.println(hero2.getInfo());
         //hero3.GetDamage(hero3.Attack());
