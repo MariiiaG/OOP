@@ -1,24 +1,20 @@
 package OOP.Sem3_studyGroup.group;
 
-import OOP.Sem3_studyGroup.student.Student;
-
 import java.util.Iterator;
 import java.util.List;
 
-public class StudentIterator implements Iterator<Student> {
+public class StudentIterator<T> implements Iterator<T> {
     private int index;
-    private List<Student> studentList;
-    public StudentIterator(List<Student> studentList) {
+    private List<T> studentList;
+    public StudentIterator(List<T> studentList) {
         this.studentList = studentList;
     }
-
     @Override
     public boolean hasNext() {
         return studentList.size() > index;
     }
-
     @Override
-    public Student next() {
+    public T next() {
         return studentList.get(index++);
     }
 }

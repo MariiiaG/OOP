@@ -1,12 +1,15 @@
 package OOP.OOP.Sem1_famTree.family_tree.family_tree;
 
 import OOP.OOP.Sem1_famTree.family_tree.human.Human;
+import OOP.OOP.Sem1_famTree.family_tree.human.HumanComparatorByBirthDate;
+import OOP.OOP.Sem1_famTree.family_tree.human.HumanComparatorByName;
 
 import java.io.Serializable;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
-public class FamilyTree implements Serializable {
+public class FamilyTree implements Serializable, Iterable<Human> {
     private long humansId;
     private List<Human> humanList;
 
@@ -144,5 +147,16 @@ public class FamilyTree implements Serializable {
     @Override
     public String toString() {
         return getInfo();
+    }
+
+    public Iterator<Human> iterator() {
+        return new FamilyTreeIterator(humanList);
+    }
+    @Override
+    public void sortByName() {
+        humanList.sort(new HumanComparatorByName());
+    }
+    public void sortByBirthDate() {
+        humanList.sort(new HumanComparatorByBirthDate());
     }
 }

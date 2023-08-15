@@ -8,7 +8,7 @@ import java.util.List;
 
 public class Service {
     private List<StudyGroup> studyGroupList;
-    private StudyGroup activeGroup;
+    private StudyGroup<Student> activeGroup;
     private int id;
 
     public Service() {

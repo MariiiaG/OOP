@@ -1,6 +1,8 @@
 package OOP.Sem3_studyGroup.student;
 
-public class Student implements Comparable<Student>{
+import OOP.Sem3_studyGroup.group.StudyGroupItem;
+
+public class Student implements Comparable<Student>, StudyGroupItem{
     private int id;
     private String name;
     private int age;
