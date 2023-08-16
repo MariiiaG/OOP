@@ -1,6 +1,6 @@
-package Ex003Math.Mathematics.CalculateArea;
+package OOP.Lec5.Ex003Math.Mathematics.CalculateArea;
 
-import Ex003Math.Mathematics.Shapes.Shape;
+import OOP.Lec5.Ex003Math.Mathematics.Shapes.Shape;
 
 public interface Calculate {
     double visit(Shape shape);

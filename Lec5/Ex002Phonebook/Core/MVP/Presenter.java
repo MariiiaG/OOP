@@ -1,11 +1,11 @@
-package Ex002Phonebook.Core.MVP;
-import Ex002Phonebook.Core.Models.Contact;
+package OOP.Lec5.Ex002Phonebook.Core.MVP;
+import OOP.Lec5.Ex002Phonebook.Core.Models.Contact;
 public class Presenter {
     
     private Model model;
-    private View view;
+    private OOP.Lec5.Ex002Phonebook.Core.MVP.View view;
 
-    public Presenter(View view, String pathDb) {
+    public Presenter(OOP.Lec5.Ex002Phonebook.Core.MVP.View view, String pathDb) {
         this.view = view;
         model = new Model(pathDb);
     }

@@ -1,13 +1,13 @@
-package Ex003Math.Core.Presenters;
+package OOP.Lec5.Ex003Math.Core.Presenters;
 
  
-import Ex003Math.Core.Infrastructure.Generator;
-import Ex003Math.Core.Models.Model;
-import Ex003Math.Core.Views.View;
-import Ex003Math.Mathematics.Exceptions.UnacceptableValueException;
-import Ex003Math.Mathematics.Shapes.Circle;
-import Ex003Math.Mathematics.Shapes.Rectangle;
-import Ex003Math.Mathematics.Shapes.Shape;
+import OOP.Lec5.Ex003Math.Core.Infrastructure.Generator;
+import OOP.Lec5.Ex003Math.Core.Models.Model;
+import OOP.Lec5.Ex003Math.Core.Views.View;
+import OOP.Lec5.Ex003Math.Mathematics.Exceptions.UnacceptableValueException;
+import OOP.Lec5.Ex003Math.Mathematics.Shapes.Circle;
+import OOP.Lec5.Ex003Math.Mathematics.Shapes.Rectangle;
+import OOP.Lec5.Ex003Math.Mathematics.Shapes.Shape;
 
 public class Presenter {
     Model model;

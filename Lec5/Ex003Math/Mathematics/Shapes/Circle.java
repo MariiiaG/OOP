@@ -1,6 +1,6 @@
-package Ex003Math.Mathematics.Shapes;
+package OOP.Lec5.Ex003Math.Mathematics.Shapes;
 
-import Ex003Math.Mathematics.Exceptions.UnacceptableValueException;
+import OOP.Lec5.Ex003Math.Mathematics.Exceptions.UnacceptableValueException;
 
 public class Circle extends Shape {
     

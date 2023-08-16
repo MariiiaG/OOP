@@ -1,4 +1,4 @@
-package Ex003Math.Core.Views;
+package OOP.Lec5.Ex003Math.Core.Views;
 
 public interface View {
     String get();

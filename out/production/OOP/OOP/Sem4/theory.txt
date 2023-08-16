@@ -1,0 +1,12 @@
+MVP pattern
+M - Model - backend workings of the project
+V - View - frontend part of it, what is presented to the user
+P - Presenter - what links M and V together
+
+The idea is to create M and V independently of each other, they do not depend on each other.
+This facilitates testing and development.
+People can work on writing M and V independently of each other.
+
+Similar to MVC pattern (Model - View - Controller). Main difference being that in MVC M and V still communicate.
+
+See lesson project IdeaProjects/CityWeather

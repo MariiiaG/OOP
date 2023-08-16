@@ -1,13 +1,9 @@
-package Ex002Phonebook.Core.MVP;
+package OOP.Lec5.Ex002Phonebook.Core.MVP;
 
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
+import OOP.Lec5.Ex002Phonebook.Core.Infrastructure.Phonebook;
+import OOP.Lec5.Ex002Phonebook.Core.Models.Contact;
 
-import Ex002Phonebook.Core.Infrastructure.Phonebook;
-import Ex002Phonebook.Core.Models.Contact;
+import java.io.*;
 
 public class Model {
 

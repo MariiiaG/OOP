@@ -1,4 +1,4 @@
-package Ex003Math.Mathematics.Shapes;
+package OOP.Lec5.Ex003Math.Mathematics.Shapes;
 
 public class Square {
     /// ???...

@@ -1,4 +1,4 @@
-package Ex003Math.Mathematics.Exceptions;
+package OOP.Lec5.Ex003Math.Mathematics.Exceptions;
 
 public class UnacceptableValueException extends MathematicsException {
     public UnacceptableValueException(String msg) {

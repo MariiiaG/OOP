@@ -1,12 +1,12 @@
-package Ex001Calc;
+package OOP.Lec5.Ex001Calc;
 
 public class PresenterOfT<T extends CalcModel> {
- 
 
-    View view;
+
+    OOP.Lec5.Ex001Calc.View view;
     Model model;
 
-    public PresenterOfT(T m, View v) {
+    public PresenterOfT(T m, OOP.Lec5.Ex001Calc.View v) {
         model = m;
         view = v;
     }

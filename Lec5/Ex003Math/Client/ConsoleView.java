@@ -1,8 +1,8 @@
-package Ex003Math.Client;
+package OOP.Lec5.Ex003Math.Client;
+
+import OOP.Lec5.Ex003Math.Core.Views.View;
 
 import java.util.Scanner;
-
-import Ex003Math.Core.Views.View;
 
 public class ConsoleView implements View {
     Scanner in = new Scanner(System.in);

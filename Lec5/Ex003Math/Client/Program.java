@@ -1,11 +1,6 @@
-package Ex003Math.Client;
+package OOP.Lec5.Ex003Math.Client;
 
-import Ex003Math.Mathematics.Exceptions.UnacceptableValueException;
-import Ex003Math.Mathematics.CalculateArea.CalculateArea;
-import Ex003Math.Mathematics.Shapes.Canvas;
-import Ex003Math.Mathematics.Shapes.Circle;
-import Ex003Math.Mathematics.Shapes.Rectangle;
-import Ex003Math.Mathematics.Shapes.Shape;
+import OOP.Lec5.Ex003Math.Mathematics.Exceptions.UnacceptableValueException;
 
 public class Program {
     public static void main(String[] args) throws UnacceptableValueException {
