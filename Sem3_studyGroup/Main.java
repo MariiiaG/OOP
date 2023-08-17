@@ -1,18 +1,12 @@
 package OOP.Sem3_studyGroup;
 
-import OOP.Sem3_studyGroup.model.service.Service;
+
+import OOP.Sem3_studyGroup.view.ConsoleUI;
+import OOP.Sem3_studyGroup.view.View;
 
 public class Main {
     public static void main(String[] args) {
-        Service service = new Service();
-
-        service.addStudent("Pasha", 18);
-        service.addStudent("Masha", 17);
-        service.addStudent("Lena", 19);
-        service.addStudent("Ivan", 20);
-
-        System.out.println(service.info());
-        service.sortByName();
-        System.out.println(service.info());
+        View view = new ConsoleUI();
+        view.start();
     }
 }

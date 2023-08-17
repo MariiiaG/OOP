@@ -16,7 +16,7 @@ public class Service {
         group.addStudent(student);
     }
 
-    public String info() {
+    public String getStudentsInfo() {
         StringBuilder stringBuilder = new StringBuilder();
         stringBuilder.append("Group name list:\n");
 
