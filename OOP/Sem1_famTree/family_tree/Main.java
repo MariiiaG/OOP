@@ -1,8 +1,8 @@
 package OOP.OOP.Sem1_famTree.family_tree;
 
-import OOP.OOP.Sem1_famTree.family_tree.family_tree.FamilyTree;
-import OOP.OOP.Sem1_famTree.family_tree.human.Gender;
-import OOP.OOP.Sem1_famTree.family_tree.human.Human;
+import OOP.OOP.Sem1_famTree.family_tree.model.family_tree.FamilyTree;
+import OOP.OOP.Sem1_famTree.family_tree.model.human.Gender;
+import OOP.OOP.Sem1_famTree.family_tree.model.human.Human;
 import OOP.OOP.Sem1_famTree.family_tree.writer.FileHandler;
 
 import java.time.LocalDate;
@@ -25,21 +25,21 @@ public class Main {
     static FamilyTree testTree() {
         FamilyTree tree = new FamilyTree();
 
-        Human vanya = new Human("Василий", Gender.Male, LocalDate.of(1963, 12, 10));
-        Human masha = new Human("Мария", Gender.Female, LocalDate.of(1965, 9, 15));
-        tree.add(vanya);
-        tree.add(masha);
-        tree.setWedding(vanya.getId(), masha.getId());
+        Human lyosha = new Human("Алексей", Gender.Male, LocalDate.of(1963, 12, 10));
+        Human lena = new Human("Елена", Gender.Female, LocalDate.of(1965, 9, 15));
+        tree.add(lyosha);
+        tree.add(lena);
+        tree.setWedding(lyosha.getId(), lena.getId());
 
-        Human christina = new Human("Кристина", Gender.Female, LocalDate.of(1988, 7, 5),
-                vanya, masha);
-        Human semyon = new Human("Семен", Gender.Male, LocalDate.of(1991, 1, 25),
-                vanya, masha);
-        tree.add(christina);
-        tree.add(semyon);
+        Human masha = new Human("Мария", Gender.Female, LocalDate.of(1988, 7, 5),
+                lyosha, lena);
+        Human vasya = new Human("Василий", Gender.Male, LocalDate.of(1991, 1, 25),
+                lyosha, lena);
+        tree.add(masha);
+        tree.add(vasya);
 
         Human larisa = new Human("Лариса", Gender.Female, LocalDate.of(1945, 9, 1));
-        larisa.addChild(vanya);
+        larisa.addChild(lyosha);
         tree.add(larisa);
 
         return tree;

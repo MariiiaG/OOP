@@ -1,6 +1,6 @@
 package OOP.Sem3_studyGroup;
 
-import OOP.Sem3_studyGroup.service.Service;
+import OOP.Sem3_studyGroup.model.service.Service;
 
 public class Main {
     public static void main(String[] args) {
