@@ -10,9 +10,9 @@ public class MainMenu {
 
     public MainMenu(ConsoleUI consoleUI) {
             commandList = new ArrayList<>();
-            commandList.add((Command) new GetHumanList(consoleUI));
-            commandList.add((Command) new SortByBirthDate(consoleUI));
-            commandList.add((Command) new SortByName(consoleUI));
+            commandList.add(new GetHumanList(consoleUI));
+            commandList.add(new SortByBirthDate(consoleUI));
+            commandList.add(new SortByName(consoleUI));
         }
 
     public String print() {

@@ -29,7 +29,7 @@ public class ConsoleUI implements View {
         }
     }
     @Override
-    public void printAnswer(String text) {
+    public void print(String text) {
         System.out.println(text);
     }
 

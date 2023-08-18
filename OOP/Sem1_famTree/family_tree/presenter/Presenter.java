@@ -13,19 +13,18 @@ public class Presenter {
     }
     public void addHuman(String name, String gender, String birthDate, long idFather, long idMother) {
         String answer = service.addHuman(name, gender, birthDate, idFather, idMother);
-        view.printAnswer(answer);
+        view.print(answer);
     }
 
     public void getHumanList() {
-        view.printAnswer(service.getHumanList());
+        String answer = service.getHumanList();
+        view.print(answer);
     }
 
     public void sortByName() {
         service.sortByName();
-        view.printAnswer("Sort Family Tree by name\n");
     }
     public void sortByBirthDate() {
         service.sortByBirthDate();
-        view.printAnswer("Sort Family Tree by birth date\n");
     }
 }

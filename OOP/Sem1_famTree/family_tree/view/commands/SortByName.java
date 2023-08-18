@@ -2,7 +2,7 @@ package OOP.OOP.Sem1_famTree.family_tree.view.commands;
 
 import OOP.OOP.Sem1_famTree.family_tree.view.ConsoleUI;
 
-public class SortByName {
+public class SortByName implements Command{
     private ConsoleUI consoleUI;
 
     public SortByName(ConsoleUI consoleUI) {
