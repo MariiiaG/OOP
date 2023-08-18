@@ -1,6 +1,5 @@
 package OOP.Sem3_studyGroup;
 
-
 import OOP.Sem3_studyGroup.view.ConsoleUI;
 import OOP.Sem3_studyGroup.view.View;
 

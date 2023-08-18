@@ -3,19 +3,13 @@ package OOP.OOP.Sem1_famTree.family_tree;
 import OOP.OOP.Sem1_famTree.family_tree.model.family_tree.FamilyTree;
 import OOP.OOP.Sem1_famTree.family_tree.model.human.Gender;
 import OOP.OOP.Sem1_famTree.family_tree.model.human.Human;
-import OOP.OOP.Sem1_famTree.family_tree.writer.FileHandler;
+import OOP.OOP.Sem1_famTree.family_tree.model.writer.FileHandler;
 
 import java.time.LocalDate;
 
 public class Main {
     public static void main(String[] args) {
         String filePath = "OOP/Sem1_famTree/family_tree/data/tree.out";
-       /* FileHandler fileHandler = new FileHandler();
-
-        FamilyTree tree = testTree();
-        System.out.println(tree);
-
-        fileHandler.save(tree, filePath);*/
 
         FileHandler fileHandler = new FileHandler();
         FamilyTree tree = (FamilyTree) fileHandler.read(filePath);

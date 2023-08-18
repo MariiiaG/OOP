@@ -1,9 +1,8 @@
-package OOP.OOP.Sem1_famTree.family_tree.writer;
+package OOP.OOP.Sem1_famTree.family_tree.model.writer;
 
 import java.io.*;
 
-public class FileHandler implements Writable{
-    @Override
+public class FileHandler {
     public boolean save(Serializable serializable, String filePath) {
         try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(filePath))) {
             objectOutputStream.writeObject(serializable);
@@ -14,7 +13,6 @@ public class FileHandler implements Writable{
         }
     }
 
-    @Override
     public Object read(String filePath) {
         try (ObjectInputStream objectInputStream = new ObjectInputStream(new FileInputStream(filePath))) {
             return objectInputStream.readObject();

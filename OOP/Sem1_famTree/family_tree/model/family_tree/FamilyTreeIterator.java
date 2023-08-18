@@ -3,7 +3,7 @@ package OOP.OOP.Sem1_famTree.family_tree.model.family_tree;
 import java.util.Iterator;
 import java.util.List;
 
-public class FamilyTreeIterator<E extends TreeNode> implements Iterator<E> {
+public class FamilyTreeIterator<E extends TreeNode<E>> implements Iterator<E> {
     private List<E> list;
     private int index;
 

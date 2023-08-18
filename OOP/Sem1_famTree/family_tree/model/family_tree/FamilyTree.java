@@ -74,23 +74,18 @@ public class FamilyTree<E extends TreeNode<E>> implements Serializable, Iterable
         return res;
     }
 
-    public boolean setWedding (long humanId1, long humanId2) {
-        if (checkId(humanId1) && checkId(humanId2)) {
+    public boolean setWedding(long humanId1, long humanId2){
+        if (checkId(humanId1) && checkId(humanId2)){
             E human1 = getById(humanId1);
             E human2 = getById(humanId2);
-            return setWedding(human1, human2);
+            if (human1.getSpouse() == null && human2.getSpouse() == null){
+                human1.setSpouse(human2);
+                human2.setSpouse(human1);
+            } else {
+                return false;
+            }
         }
         return false;
-    }
-
-    public boolean setWedding (E human1, E human2) {
-        if (human1.getSpouse() == null && human2.getSpouse() == null) {
-            human1.setSpouse(human2);
-            human2.setSpouse(human1);
-            return true;
-        } else {
-            return false;
-        }
     }
 
     public boolean setDivorse (long humanId1, long humanId2) {

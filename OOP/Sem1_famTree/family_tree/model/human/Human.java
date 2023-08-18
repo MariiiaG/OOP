@@ -163,7 +163,7 @@ public class Human implements Serializable, TreeNode<Human> {
         res.append("children: ");
         if (children.size() != 0) {
             res.append(children.get(0).getName());
-            for (int i =1; i < children.size(); i++) {
+            for (int i = 1; i < children.size(); i++) {
                 res.append(", ");
                 res.append(children.get(i).getName());
             }
