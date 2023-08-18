@@ -8,7 +8,6 @@ import OOP.OOP.Sem1_famTree.family_tree.model.writer.FamTreeFileHandler;
 import OOP.OOP.Sem1_famTree.family_tree.view.ConsoleUI;
 import OOP.OOP.Sem1_famTree.family_tree.view.View;
 
-import java.io.IOException;
 import java.time.LocalDate;
 
 public class Main {
@@ -17,7 +16,7 @@ public class Main {
         View view =new ConsoleUI();
         view.start();
     }*/
-    public static void main(String[] args) throws IOException, ClassNotFoundException {
+    public static void main(String[] args) {
         FamilyTree<Human> tree = new FamilyTree<>();
 
         Human lyosha = new Human("Лёша", Gender.Male, LocalDate.of(1967, 4, 5));
@@ -36,7 +35,6 @@ public class Main {
 
         service.setWritable(new FamTreeFileHandler());
         service.save();
-
 
         View view =new ConsoleUI();
         view.start();
