@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MainMenu {
-        private List<Command> commandList;
+    private List<Command> commandList;
 
     public MainMenu(ConsoleUI consoleUI) {
             commandList = new ArrayList<>();
